@@ -1,0 +1,77 @@
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cabin:ital@1&family=Happy+Monkey&family=Inter:wght@100;400&family=Karla&family=Lato&family=Noto+Sans&family=Noto+Sans+JP&family=Nunito&family=PT+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="root"></div>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+function Header(){
+  return (
+    <div className="main-div">
+      <img src="jackie.52.22.jpg" />
+      <div className="info">
+<h3 className="myName">Mugeha Jackline</h3>
+<h5>Frontend Developer</h5>
+<p><a href="C:\Users\25475\OneDrive\portfoliobeginnerproject\index.html" target="_blank">jmugeha.website</a></p>
+</div>
+<button className="btn1"><i className="fa-solid fa-envelope"></i><a href="mailto:mugehajacky@gmail.com" target="_blank">E-mail</a></button>
+<button className="btn2"><i className="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/jackline-mugeha-b843b5215?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Ba%2FYSapPETbiUmfKLHZSiFw%3D%3D" target="_blank">LinkedIn</a></button>
+    </div>
+  )
+}
+
+function About(){
+  return (
+    <div className="divAbout">
+    <h3 className="about">About</h3>
+    <p>I am a FrontEnd developer with a
+    particular interest in making things simple
+     and automating daily tasks. I try
+      to keep up with security and best practices and I am always looking for new things to learn.
+      </p>
+      </div>
+  )
+}
+function Interests(){
+  return (
+    <div className="div-interest">
+    <h3 className="interest">Interests</h3>
+    <p>Travel geek. Coffee Fanatic. Baller. Soccer. Fitness Instructor.</p>
+    </div>
+  )
+}
+function FooterLinks(){
+  return (
+    <div className="footerlinks">
+    <a href="https://twitter.com/freakdelmar" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://github.com/Mugeha" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  )
+}
+function MainContent(){
+  return (
+    <div className="Main">
+<Header />
+<About />
+<Interests />
+<FooterLinks />
+</div>
+  )
+}
+
+ReactDOM.render(<MainContent />, document.getElementById("root"))
+
+</script>
+
+    </body>
+</html>
